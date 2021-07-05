@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.IO;
 using System.Text;
-using System.Threading.Tasks;
+using VkNet;
+using VkNet.Model;
+using VkNet.Model.RequestParams;
 using System.Windows.Forms;
 
 namespace VK_API_zadaniya
@@ -16,5 +14,24 @@ namespace VK_API_zadaniya
         {
             InitializeComponent();
         }
+        public static string getAuthForGroup()
+        {
+            string fileName = @"token.txt";
+            string token = "";
+            try
+            {
+                using (StreamReader sr = new StreamReader(fileName))
+                {
+                    token = sr.ReadLine();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return token;
+        }
+
+
     }
 }
