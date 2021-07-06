@@ -61,6 +61,7 @@ namespace VK_API_zadaniya
                     foreach (User user in getFriends)
                         listBox1.Items.Add(Encoding.UTF8.GetString(Encoding.Default.GetBytes(user.FirstName + " " + user.LastName)));
                 }
+
             }
             catch
             {
