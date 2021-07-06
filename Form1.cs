@@ -99,12 +99,13 @@ namespace VK_API_zadaniya
                     AccessToken = textBox1.Text
                 });
                 var get = api_user.Wall.Get(new WallGetParams());
+                wallPost1.Text = "";
                 foreach (var wallPosts in get.WallPosts)
-                    wallPost1.Text = Encoding.Default.GetString(Encoding.UTF8.GetBytes(wallPosts.Text));
+                    wallPost1.Text += Encoding.UTF8.GetString(Encoding.Default.GetBytes(wallPosts.Text)) + Environment.NewLine;
             }
             catch
             {
-                MessageBox.Show("Некорретный токен");
+                MessageBox.Show("Некорректный токен");
             }
         }
     }
