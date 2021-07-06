@@ -56,8 +56,7 @@ namespace VK_API_zadaniya
                     Fields = VkNet.Enums.Filters.ProfileFields.All
                 });
                 foreach (User user in getFriends)
-                    listBox1.Items.Add(fr.FirstName + " " + fr.LastName);
-
+                    listBox1.Items.Add(user.FirstName + " " + user.LastName);
             }
         }
 
