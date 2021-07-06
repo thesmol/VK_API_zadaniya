@@ -36,5 +36,10 @@ namespace VK_API_zadaniya
         {
             //комментраий
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
