@@ -43,11 +43,13 @@ namespace VK_API_zadaniya
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SandyBrown;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button1.Location = new System.Drawing.Point(305, 238);
+            this.button1.Location = new System.Drawing.Point(328, 437);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 43);
+            this.button1.Size = new System.Drawing.Size(216, 43);
             this.button1.TabIndex = 1;
             this.button1.Text = "Показать список";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,11 +58,11 @@ namespace VK_API_zadaniya
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(550, 44);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(439, 444);
+            this.listBox1.Size = new System.Drawing.Size(439, 436);
             this.listBox1.TabIndex = 2;
             // 
             // button2
@@ -111,7 +113,7 @@ namespace VK_API_zadaniya
             this.groupBox1.Location = new System.Drawing.Point(272, 44);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(142, 80);
+            this.groupBox1.Size = new System.Drawing.Size(197, 90);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "показать";
@@ -119,10 +121,10 @@ namespace VK_API_zadaniya
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(29, 48);
+            this.radioButton2.Location = new System.Drawing.Point(29, 60);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(107, 21);
+            this.radioButton2.Size = new System.Drawing.Size(151, 26);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "подписчики";
@@ -134,22 +136,11 @@ namespace VK_API_zadaniya
             this.radioButton1.Location = new System.Drawing.Point(29, 24);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(121, 31);
+            this.radioButton1.Size = new System.Drawing.Size(103, 26);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "друзья";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(33, 60);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(177, 31);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "подписчики";
-            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
