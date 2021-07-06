@@ -61,6 +61,16 @@ namespace VK_API_zadaniya
                     foreach (User user in getFriends)
                         listBox1.Items.Add(Encoding.UTF8.GetString(Encoding.Default.GetBytes(user.FirstName + " " + user.LastName)));
                 }
+                if (radioButton2.Checked)
+                {
+                    var getFollowers = api_group.Groups.GetMembers(new GroupsGetMembersParams()
+                    {
+                        GroupId = "204490409",
+                        Fields = VkNet.Enums.Filters.UsersFields.FirstNameAbl
+                    });
+                    foreach (User user in getFollowers)
+                        listBox1.Items.Add(Encoding.UTF8.GetString(Encoding.Default.GetBytes(user.FirstName + " " + user.LastName)));
+                }
 
             }
             catch
@@ -81,9 +91,7 @@ namespace VK_API_zadaniya
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            // получит запись со стены (для пользователя)
             var api_user = new VkApi();
-            // обработать исключения!
             try
             {
                 api_user.Authorize(new ApiAuthParams
@@ -96,7 +104,7 @@ namespace VK_API_zadaniya
             }
             catch
             {
-
+                MessageBox.Show("Некорретный токен");
             }
         }
     }
