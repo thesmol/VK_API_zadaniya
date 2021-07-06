@@ -14,9 +14,9 @@ namespace VK_API_zadaniya
         {
             InitializeComponent();
         }
-        public static string getAuthForGroup()
+        public static string getAuthForGroup(string fileName)
         {
-            string fileName = @"token.txt";
+
             string token = "";
             try
             {
@@ -39,7 +39,12 @@ namespace VK_API_zadaniya
 
         private void button2_Click(object sender, EventArgs e)
         {
+            textBox1.Text = getAuthForGroup("token1.txt");
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = getAuthForGroup("token2.txt");
         }
     }
 }
