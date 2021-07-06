@@ -67,7 +67,7 @@ namespace VK_API_zadaniya
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(23, 93);
+            this.button3.Location = new System.Drawing.Point(23, 84);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(137, 43);
             this.button3.TabIndex = 4;
@@ -77,10 +77,10 @@ namespace VK_API_zadaniya
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 143);
+            this.textBox1.Location = new System.Drawing.Point(23, 133);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 116);
+            this.textBox1.Size = new System.Drawing.Size(137, 126);
             this.textBox1.TabIndex = 5;
             // 
             // Form1
