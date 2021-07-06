@@ -41,6 +41,7 @@ namespace VK_API_zadaniya
             this.button1.TabIndex = 1;
             this.button1.Text = "Показать список друзей";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listBox1
             // 
@@ -48,7 +49,7 @@ namespace VK_API_zadaniya
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(480, 35);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 356);
+            this.listBox1.Size = new System.Drawing.Size(308, 404);
             this.listBox1.TabIndex = 2;
             // 
             // Form1
