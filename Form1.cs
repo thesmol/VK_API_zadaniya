@@ -70,5 +70,6 @@ namespace VK_API_zadaniya
         {
             textBox1.Text = getAuthForGroup("token2.txt");
         }
+
     }
 }
