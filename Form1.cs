@@ -104,7 +104,7 @@ namespace VK_API_zadaniya
             }
             catch
             {
-                MessageBox.Show("Некорретный токен");
+                MessageBox.Show("Некорректный токен");
             }
         }
     }
