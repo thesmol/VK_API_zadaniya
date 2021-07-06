@@ -71,5 +71,25 @@ namespace VK_API_zadaniya
             textBox1.Text = getAuthForGroup("token2.txt");
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // получит запись со стены (для пользователя)
+            var api_user = new VkApi();
+            // обработать исключения!
+            try
+            {
+                api_user.Authorize(new ApiAuthParams
+                {
+                    AccessToken = textBox1.Text
+                });
+                var get = api_user.Wall.Get(new WallGetParams());
+                foreach (var wallPosts in get.WallPosts)
+                    wallPost.Text = Encoding.Default.GetString(Encoding.UTF8.GetBytes(wallPosts.Text));
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
