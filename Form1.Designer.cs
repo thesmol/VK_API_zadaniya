@@ -127,7 +127,7 @@ namespace VK_API_zadaniya
             this.radioButton2.Location = new System.Drawing.Point(29, 60);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(160, 26);
+            this.radioButton2.Size = new System.Drawing.Size(163, 26);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "подписчиков";
@@ -139,7 +139,7 @@ namespace VK_API_zadaniya
             this.radioButton1.Location = new System.Drawing.Point(29, 24);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(100, 26);
+            this.radioButton1.Size = new System.Drawing.Size(103, 26);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "друзей";
