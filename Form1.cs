@@ -72,6 +72,11 @@ namespace VK_API_zadaniya
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
             // получит запись со стены (для пользователя)
             var api_user = new VkApi();
             // обработать исключения!
@@ -83,7 +88,7 @@ namespace VK_API_zadaniya
                 });
                 var get = api_user.Wall.Get(new WallGetParams());
                 foreach (var wallPosts in get.WallPosts)
-                    wallPost.Text = Encoding.Default.GetString(Encoding.UTF8.GetBytes(wallPosts.Text));
+                    wallPost1.Text = Encoding.Default.GetString(Encoding.UTF8.GetBytes(wallPosts.Text));
             }
             catch
             {

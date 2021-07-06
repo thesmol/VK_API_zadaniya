@@ -37,6 +37,8 @@ namespace VK_API_zadaniya
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.wallPost1 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,10 +61,10 @@ namespace VK_API_zadaniya
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(550, 44);
+            this.listBox1.Location = new System.Drawing.Point(550, 4);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(439, 436);
+            this.listBox1.Size = new System.Drawing.Size(384, 436);
             this.listBox1.TabIndex = 2;
             // 
             // button2
@@ -124,7 +126,7 @@ namespace VK_API_zadaniya
             this.radioButton2.Location = new System.Drawing.Point(29, 60);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(151, 26);
+            this.radioButton2.Size = new System.Drawing.Size(148, 26);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "подписчики";
@@ -136,18 +138,38 @@ namespace VK_API_zadaniya
             this.radioButton1.Location = new System.Drawing.Point(29, 24);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 26);
+            this.radioButton1.Size = new System.Drawing.Size(100, 26);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "друзья";
             this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // wallPost1
+            // 
+            this.wallPost1.Location = new System.Drawing.Point(940, 4);
+            this.wallPost1.Multiline = true;
+            this.wallPost1.Name = "wallPost1";
+            this.wallPost1.Size = new System.Drawing.Size(355, 436);
+            this.wallPost1.TabIndex = 7;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(328, 386);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(216, 44);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "getwallpost";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1011, 535);
+            this.ClientSize = new System.Drawing.Size(1298, 523);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.wallPost1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
@@ -177,6 +199,8 @@ namespace VK_API_zadaniya
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox wallPost;
         private System.Windows.Forms.Button getwallpost;
+        private System.Windows.Forms.TextBox wallPost1;
+        private System.Windows.Forms.Button button4;
     }
 }
 
