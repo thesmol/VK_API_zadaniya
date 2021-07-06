@@ -13,6 +13,7 @@ namespace VK_API_zadaniya
         public Form1()
         {
             InitializeComponent();
+            radioButton1.Checked = true;
         }
         public static string getAuthForGroup(string fileName)
         {
@@ -34,7 +35,30 @@ namespace VK_API_zadaniya
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //комментраий
+            var api_user = new VkApi();
+            // обработать исключения!
+            api_user.Authorize(new ApiAuthParams
+            {
+                AccessToken = textBox1.Text
+            });
+
+            var api_group = new VkApi();
+            // обработать исключения!
+            api_group.Authorize(new ApiAuthParams
+            {
+                AccessToken = textBox1.Text
+            });
+
+            if (radioButton1.Checked)
+            {
+                var getFriends = api_user.Friends.Get(new VkNet.Model.RequestParams.FriendsGetParams
+                {
+                    Fields = VkNet.Enums.Filters.ProfileFields.All
+                });
+                foreach (User user in getFriends)
+                    listBox1.Items.Add(fr.FirstName + " " + fr.LastName);
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
