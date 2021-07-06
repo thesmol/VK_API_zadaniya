@@ -5,6 +5,7 @@ using VkNet;
 using VkNet.Model;
 using VkNet.Model.RequestParams;
 using System.Windows.Forms;
+using VkNet.Enums.Filters;
 
 namespace VK_API_zadaniya
 {
@@ -35,28 +36,35 @@ namespace VK_API_zadaniya
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var api_user = new VkApi();
-            // обработать исключения!
-            api_user.Authorize(new ApiAuthParams
-            {
-                AccessToken = textBox1.Text
-            });
-
-            var api_group = new VkApi();
-            // обработать исключения!
-            api_group.Authorize(new ApiAuthParams
-            {
-                AccessToken = textBox1.Text
-            });
-
-            if (radioButton1.Checked)
-            {
-                var getFriends = api_user.Friends.Get(new VkNet.Model.RequestParams.FriendsGetParams
+            listBox1.Items.Clear();
+            
+                var api_user = new VkApi();
+                api_user.Authorize(new ApiAuthParams
                 {
-                    Fields = VkNet.Enums.Filters.ProfileFields.All
+                    AccessToken = textBox1.Text
                 });
-                foreach (User user in getFriends)
-                    listBox1.Items.Add(user.FirstName + " " + user.LastName);
+
+                var api_group = new VkApi();
+                api_group.Authorize(new ApiAuthParams
+                {
+                    AccessToken = textBox1.Text
+                });
+            
+            try
+            {
+                if (radioButton1.Checked)
+                {
+                    var getFriends = api_user.Friends.Get(new VkNet.Model.RequestParams.FriendsGetParams
+                    {
+                        Fields = VkNet.Enums.Filters.ProfileFields.All
+                    });
+                    foreach (User user in getFriends)
+                        listBox1.Items.Add(Encoding.UTF8.GetString(Encoding.Default.GetBytes(user.FirstName + " " + user.LastName)));
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Некорректный токен");
             }
         }
 
@@ -68,11 +76,6 @@ namespace VK_API_zadaniya
         private void button3_Click(object sender, EventArgs e)
         {
             textBox1.Text = getAuthForGroup("token2.txt");
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button4_Click_1(object sender, EventArgs e)

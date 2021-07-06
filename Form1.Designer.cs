@@ -48,7 +48,7 @@ namespace VK_API_zadaniya
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button1.Location = new System.Drawing.Point(328, 437);
+            this.button1.Location = new System.Drawing.Point(328, 467);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 43);
@@ -64,7 +64,7 @@ namespace VK_API_zadaniya
             this.listBox1.Location = new System.Drawing.Point(550, 4);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(384, 436);
+            this.listBox1.Size = new System.Drawing.Size(355, 516);
             this.listBox1.TabIndex = 2;
             // 
             // button2
@@ -99,11 +99,11 @@ namespace VK_API_zadaniya
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 252);
+            this.textBox1.Location = new System.Drawing.Point(26, 232);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 141);
+            this.textBox1.Size = new System.Drawing.Size(202, 161);
             this.textBox1.TabIndex = 5;
             // 
             // groupBox1
@@ -126,7 +126,7 @@ namespace VK_API_zadaniya
             this.radioButton2.Location = new System.Drawing.Point(29, 60);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(148, 26);
+            this.radioButton2.Size = new System.Drawing.Size(151, 26);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "подписчики";
@@ -138,7 +138,7 @@ namespace VK_API_zadaniya
             this.radioButton1.Location = new System.Drawing.Point(29, 24);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(100, 26);
+            this.radioButton1.Size = new System.Drawing.Size(103, 26);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "друзья";
@@ -146,15 +146,15 @@ namespace VK_API_zadaniya
             // 
             // wallPost1
             // 
-            this.wallPost1.Location = new System.Drawing.Point(940, 4);
+            this.wallPost1.Location = new System.Drawing.Point(931, 4);
             this.wallPost1.Multiline = true;
             this.wallPost1.Name = "wallPost1";
-            this.wallPost1.Size = new System.Drawing.Size(355, 436);
+            this.wallPost1.Size = new System.Drawing.Size(355, 516);
             this.wallPost1.TabIndex = 7;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(328, 386);
+            this.button4.Location = new System.Drawing.Point(328, 416);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(216, 44);
             this.button4.TabIndex = 8;
@@ -167,7 +167,7 @@ namespace VK_API_zadaniya
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1298, 523);
+            this.ClientSize = new System.Drawing.Size(1298, 540);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.wallPost1);
             this.Controls.Add(this.groupBox1);
