@@ -184,9 +184,9 @@ namespace VK_API_zadaniya
             this.label2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(926, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(214, 22);
+            this.label2.Size = new System.Drawing.Size(226, 22);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Пост пользователя";
+            this.label2.Text = "Посты пользователя";
             // 
             // Form1
             // 
